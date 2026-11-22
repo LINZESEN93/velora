@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="VELORA perfume concept website — fully responsive for desktop, tablet and mobile. Featuring three fragrances and viewing controls." name="description"/>
+<meta content="#351B25" name="theme-color"/>
+<title>VELORA — A Fragrance for Every Chapter</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#home">Skip to content</a>
+<!-- DISPLAY SETTINGS: simple optional preferences for comfortable viewing. -->
+<div aria-hidden="true" class="reading-progress" id="reading-progress"></div>
+<div aria-hidden="true" class="visual-overlay"></div>
+<button aria-controls="display-panel" aria-expanded="false" aria-label="Open display settings" class="display-toggle" id="display-toggle" type="button">
+<svg aria-hidden="true" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="19"><circle cx="12" cy="12" r="3.5"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+<span>Display</span>
+</button>
+<div aria-hidden="true" class="display-scrim" hidden="" id="display-scrim"></div><aside aria-label="Personalise display" class="display-panel" hidden="" id="display-panel">
+<div class="display-panel-header">
+<div><span class="display-overline">VELORA · PERSONALISE</span><h2>Display settings</h2><p>Make your visit more comfortable.</p></div>
+<button aria-label="Close display settings" class="panel-close" id="display-close" type="button">×</button>
+</div>
+<div class="display-setting">
+<div class="display-label"><strong>Appearance</strong><small>Day / Night mode</small></div>
+<div aria-label="Choose appearance" class="display-segment" role="group">
+<button aria-pressed="true" id="theme-day" type="button">☀ Day</button>
+<button aria-pressed="false" id="theme-night" type="button">☾ Night</button>
+</div>
+</div>
+<div class="display-setting">
+<div class="display-label"><strong>Eye comfort</strong><small>Add a gentle warm tone</small></div>
+<button aria-pressed="false" class="eye-button" id="eye-care" type="button"><span aria-hidden="true" class="eye-pill"></span><span id="eye-text">Off</span></button>
+</div>
+<div class="display-setting">
+<div class="display-label"><label for="brightness-slider"><strong>Page brightness</strong></label><small>Adjust the website preview, not device brightness</small></div>
+<div class="display-slider-row"><span aria-hidden="true">◐</span><input aria-label="Page brightness" id="brightness-slider" max="115" min="75" step="5" type="range" value="100"/><output for="brightness-slider" id="brightness-value">100%</output></div>
+</div>
+<div class="display-setting">
+<div class="display-label"><strong>Text size</strong><small>Make paragraphs and headings easier to read</small></div>
+<div aria-label="Adjust text size" class="display-font-row" role="group">
+<button aria-label="Decrease text size" id="font-down" type="button">A−</button><output id="font-value">100%</output><button aria-label="Increase text size" id="font-up" type="button">A+</button>
+</div>
+</div>
+<button class="display-reset" id="display-reset" type="button">↺ Reset to default</button>
+<p class="display-footnote">Settings stay on this browser only.</p>
+</aside>
+<!-- HEADER: working navigation links jump to sections of this single page. -->
+<header class="site-header">
+<div class="header-inner content-width">
+<a aria-label="Velora, back to home" class="wordmark" href="#home">V E L O R A<span class="wordmark-dot">.</span></a>
+<button aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation menu" class="menu-toggle" id="menu-toggle" type="button"><span class="menu-button-text">Menu</span><span aria-hidden="true" class="menu-lines"><span></span><span></span></span></button><nav aria-label="Main navigation" class="main-nav" id="main-navigation">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#collection">Collection</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</nav>
+<a class="header-cta" href="#collection">Discover <span aria-hidden="true">↗</span></a>
+</div>
+</header>
+<main>
+<!-- HOME -->
+<section aria-labelledby="hero-title" class="hero screen-section" id="home">
+<div class="hero-copy">
+<div class="hero-copy-inner">
+<span class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> AN ATELIER OF SCENT</span>
+<div class="hero-edition">THE SIGNATURE COLLECTION <span>— 2026</span></div>
+<h1 id="hero-title">A fragrance<br/>for <em>every</em><br/>chapter.</h1>
+<p>More than a scent. A quiet expression of who you are, and the moments you choose to remember.</p>
+<a class="button button-cream" href="#collection">Explore the collection <span aria-hidden="true">↗</span></a>
+<div class="hero-bottom"><span>SCENTED WITH INTENTION</span><span>01 / 03</span></div>
+</div>
+</div>
+<div class="hero-visual">
+<img alt="Amber glass perfume bottle surrounded by deep burgundy roses and velvet" fetchpriority="high" height="507" src="assets/hero_rose.webp" width="765"/>
+<div class="hero-image-label"><span>OUR FIRST CHAPTER</span><strong>Midnight Rose</strong></div>
+<span aria-hidden="true" class="image-edge-note">EAU DE PARFUM · 50 ML</span>
+</div>
+<a aria-label="Scroll to brand story" class="mobile-scroll-hint" href="#about">SCROLL TO DISCOVER  ↓</a></section>
+<!-- ABOUT -->
+<section aria-labelledby="about-title" class="about-section section-space screen-section" id="about">
+<div class="content-width about-grid">
+<div class="about-photo-wrap">
+<img alt="Perfume bottle and delicate dried flowers on a stone pedestal in warm natural sunlight" height="510" loading="lazy" src="assets/brand_story.webp" width="765"/>
+<div class="about-figure-caption"><span>01</span><span>THE BEAUTY OF THE EVERYDAY</span></div>
+</div>
+<div class="about-copy">
+<span class="eyebrow"><span class="eyebrow-line"></span> THE HOUSE OF VELORA</span>
+<h2 id="about-title">Not just worn.<br/><em>Remembered.</em></h2>
+<p class="lead">We believe the most beautiful things in life are often the ones you cannot see.</p>
+<p>VELORA is an imagined niche fragrance house inspired by memory, emotion, and the art of slowing down. Each scent is designed as a small personal ritual — something intimate, expressive, and uniquely yours.</p>
+<div class="about-signature">An invitation to feel more.</div>
+<a class="inline-link" href="#experience">Discover our inspiration <span aria-hidden="true">↗</span></a>
+</div>
+</div>
+<div aria-label="Our three brand values" class="content-width values-row">
+<div class="value-item">
+<svg aria-label="Leaf icon" role="img" viewbox="0 0 48 48"><path d="M38 9C17 9 9 18 9 32c0 5 4 8 9 8 14 0 22-10 20-31Z"></path><path d="M12 37c4-8 11-14 21-20"></path></svg>
+<div><strong>Nature, reimagined</strong><span>Inspired by the world around us.</span></div>
+</div>
+<div class="value-item">
+<svg aria-label="Diamond icon" role="img" viewbox="0 0 48 48"><path d="M11 16h26l6 9-19 17L5 25l6-9Z"></path><path d="m5 25 38 0M18 16l-4 9 10 17 10-17-4-9"></path></svg>
+<div><strong>Quiet craftsmanship</strong><span>Thoughtful details in every bottle.</span></div>
+</div>
+<div class="value-item">
+<svg aria-label="Memory spark icon" role="img" viewbox="0 0 48 48"><path d="M24 4c-2 9-6 15-15 20 9 2 13 7 15 20 2-13 6-18 15-20C30 19 26 13 24 4Z"></path><path d="M5 7v6M2 10h6M41 36v7M37.5 39.5h7"></path></svg>
+<div><strong>Emotion in every note</strong><span>Made for the moments that matter.</span></div>
+</div>
+</div>
+</section>
+<!-- PRODUCTS -->
+<section aria-labelledby="collection-title" class="collection-section section-space screen-section" id="collection">
+<div class="content-width">
+<div class="collection-header">
+<div>
+<span class="eyebrow"><span class="eyebrow-line"></span> MEET THE FRAGRANCES</span>
+<h2 id="collection-title">The signature <em>collection.</em></h2>
+</div>
+<p>Three stories. Three moods. One beautiful way to make a moment your own.</p>
+</div>
+<p class="mobile-swipe-hint">SWIPE TO EXPLORE THE THREE FRAGRANCES <span aria-hidden="true">↔</span></p>
+<div class="product-grid" tabindex="0" aria-label="Fragrance collection: swipe horizontally or use arrow keys to see all three perfume cards">
+<article class="product-card">
+<div class="product-image">
+<img alt="Rosy-toned perfume bottle with delicate rose flowers" height="850" loading="lazy" src="assets/midnight_rose.webp" width="610"/>
+<span class="product-index">Nº 01</span>
+<span class="product-type">FLORAL · AMBER</span>
+</div>
+<div class="product-meta">
+<div><span class="product-subtitle">AN INTIMATE FLORAL</span><h3>Midnight Rose</h3></div>
+<span class="product-volume">50 ml</span>
+</div>
+<p>Soft rose, warm amber and a whisper of musk. For nights that stay with you.</p>
+<div class="note-row"><span>ROSE</span><span>AMBER</span><span>MUSK</span></div>
+</article>
+<article class="product-card">
+<div class="product-image">
+<img alt="Golden citrus-inspired perfume bottle beside citrus fruit and green leaves" height="850" loading="lazy" src="assets/citrus_veil.webp" width="610"/>
+<span class="product-index">Nº 02</span>
+<span class="product-type">CITRUS · FRESH</span>
+</div>
+<div class="product-meta">
+<div><span class="product-subtitle">A LITTLE RAY OF LIGHT</span><h3>Citrus Veil</h3></div>
+<span class="product-volume">50 ml</span>
+</div>
+<p>Bright bergamot, neroli and white tea. The feeling of a fresh beginning.</p>
+<div class="note-row"><span>BERGAMOT</span><span>NEROLI</span><span>WHITE TEA</span></div>
+</article>
+<article class="product-card">
+<div class="product-image">
+<img alt="Deep amber oud fragrance bottle standing beside natural wood" height="850" loading="lazy" src="assets/velvet_oud.webp" width="610"/>
+<span class="product-index">Nº 03</span>
+<span class="product-type">WOODY · WARM</span>
+</div>
+<div class="product-meta">
+<div><span class="product-subtitle">UNDERSTATED DEPTH</span><h3>Velvet Oud</h3></div>
+<span class="product-volume">50 ml</span>
+</div>
+<p>Velvety oud, creamy vanilla and sandalwood. A confident, lasting presence.</p>
+<div class="note-row"><span>OUD</span><span>VANILLA</span><span>SANDALWOOD</span></div>
+</article>
+</div>
+<p class="collection-footnote">THE VELORA COLLECTION · CONCEPT FRAGRANCES CREATED FOR THIS STUDENT PROJECT</p>
+</div>
+</section>
+<!-- MULTIMEDIA: locally embedded MP4, playable even without an internet connection. -->
+<section aria-labelledby="experience-title" class="experience-section screen-section" id="experience">
+<div class="content-width experience-grid">
+<div class="experience-copy">
+<span class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> THE VELORA EXPERIENCE</span>
+<h2 id="experience-title">The art of<br/><em>feeling.</em></h2>
+<p>Some stories are not told in words. Watch a short visual journey through the colours, textures and emotions behind our fragrances.</p>
+<span class="film-caption">THE VELORA BRAND FILM <span>01: VISUAL STUDY</span></span>
+</div>
+<div class="film-frame">
+<video aria-label="Velora perfume brand visual film" controls="" playsinline="" poster="assets/video_poster.webp" preload="metadata">
+<source src="assets/velora_brand_film.mp4" type="video/mp4"/>
+            Your browser does not support HTML5 video.
+          </video>
+<div class="film-under"><span>VELORA STUDIO</span><span>A FRAGRANCE FOR EVERY CHAPTER <span aria-hidden="true">✦</span></span></div>
+</div>
+</div>
+</section>
+<!-- CONTACT: HTML form is display-only, as allowed by the assessment brief. -->
+<section aria-labelledby="contact-title" class="contact-section section-space screen-section" id="contact">
+<div class="content-width contact-grid">
+<div class="contact-copy">
+<span class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> A NOTE FROM YOU</span>
+<h2 id="contact-title">Let's make<br/>something <em>linger.</em></h2>
+<p>A question, an idea, or a story to share? We would love to hear from you.</p>
+<div class="contact-info">
+<div>
+<svg aria-label="Location icon" role="img" viewbox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+<span>Kuala Lumpur, Malaysia <small>CONCEPT BRAND LOCATION</small></span>
+</div>
+<div>
+<svg aria-label="Envelope icon" role="img" viewbox="0 0 24 24"><rect height="14" rx="1" width="18" x="3" y="5"></rect><path d="m3 7 9 7 9-7"></path></svg>
+<span>hello@velora.example <small>DEMO EMAIL ADDRESS</small></span>
+</div>
+</div>
+</div>
+<div class="contact-form-area">
+<span class="form-title">SEND A MESSAGE <span>01 / 03</span></span>
+<form class="contact-form">
+<div class="form-row">
+<div class="field"><label for="visitor-name">Your name</label><input autocomplete="name" id="visitor-name" name="name" placeholder="Name" required="" type="text"/></div>
+<div class="field"><label for="visitor-email">Email address</label><input autocomplete="email" id="visitor-email" name="email" placeholder="Email" required="" type="email"/></div>
+</div>
+<div class="field"><label for="visitor-subject">Subject</label><select id="visitor-subject" name="subject" required=""><option disabled="" selected="" value="">Choose a subject</option><option value="fragrances">Our fragrances</option><option value="collaboration">Collaboration</option><option value="general">General enquiry</option></select></div>
+<div class="field"><label for="visitor-message">Your message</label><textarea id="visitor-message" name="message" placeholder="Tell us what's on your mind..." required="" rows="5"></textarea></div>
+<button class="button button-send" type="button">Send message <span aria-hidden="true">↗</span></button>
+<p class="form-notice">Display-only contact form for the assignment. Messages are not sent or stored.</p>
+</form>
+</div>
+</div>
+<footer class="site-footer">
+<div class="content-width footer-inner">
+<div><a class="footer-wordmark" href="#home">V E L O R A<span>.</span></a><p>A fragrance for every chapter.</p></div>
+<span>© 2026 VELORA · STUDENT CONCEPT WEBSITE</span>
+<a class="back-to-top" href="#home">BACK TO TOP <span aria-hidden="true">↑</span></a>
+</div>
+</footer></section>
+</main>
+<script defer="" src="display.js"></script>
+</body>
+</html>
